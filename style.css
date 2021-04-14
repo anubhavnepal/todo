@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(to top left, #49bb84, #c8b2c4);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+hr {
+  color: #e0e0e0;
+}
+
+ul {
+  list-style: none;
+}
+
+.card {
+  margin: 0 auto;
+  border-radius: 0 0 4rem 4rem;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(204, 204, 202);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.items input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+#plusbtn {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  transition: 1s;
+}
+
+#plusbtn:focus {
+  transform: scale(0.3);
+}
+
+#addbtn {
+  width: 100px;
+  height: 50px;
+  border-radius: 0;
+  display: none;
+  border: 1px solid rgba(36, 183, 219, 0.924);
+  transition: all 0.5s;
+}
+
+#addbtn:focus {
+  transform: none;
+  outline: none;
+  box-shadow: 0 0 6px #17191b;
+  border: 1px solid #17191b;
+  background: #212529;
+  color: #fff;
+}
+
+.add-items {
+  width: 300px;
+  height: 50px;
+  display: none;
+  transition: all 0.5s;
+}
+
+.add-items:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(36, 183, 219, 0.924);
+  border: 1px solid rgba(36, 183, 219, 0.924);
+}
+
+.completed {
+  color: #b8b8b8;
+  text-decoration: line-through;
+}
+
+/* Created By Anubhav Nepal */
