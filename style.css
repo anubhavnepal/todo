@@ -12,6 +12,10 @@ ul {
   list-style: none;
 }
 
+img {
+  border-radius: 4rem;
+}
+
 .card {
   margin: 0 auto;
   border-radius: 0 0 4rem 4rem;
