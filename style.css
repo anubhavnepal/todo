@@ -55,16 +55,18 @@ i {
   transform: scale(0.3);
 }
 
-#addbtn, #clrbtn {
+#addbtn,
+#clrbtn {
   width: 100px;
-  height: 50px;
-  border-radius: 0;
+  border-radius: 9rem;
+  padding: 0.5rem;
   display: none;
   border: 1px solid rgba(36, 183, 219, 0.924);
   transition: all 0.5s;
 }
 
-#addbtn:focus, #clrbtn:focus {
+#addbtn:focus,
+#clrbtn:focus {
   transform: none;
   outline: none;
   box-shadow: 0 0 6px #17191b;
@@ -73,18 +75,15 @@ i {
   color: #fff;
 }
 
-.username, .add-items {
+.add-items {
   width: 300px;
-  height: 50px;
+  height: 45px;
   display: none;
   transition: all 0.5s;
+  border: 1px solid rgba(36, 183, 219, 0.924);
 }
 
-.username {
-  display: inline;
-}
-
-.username:focus, .add-items:focus {
+.add-items:focus {
   outline: none;
   box-shadow: 0 0 6px rgba(36, 183, 219, 0.924);
   border: 1px solid rgba(36, 183, 219, 0.924);
@@ -95,7 +94,10 @@ i {
   text-decoration: line-through;
 }
 
-.welcome, .alert-msg, .clear-msg, .invisible {
+.welcome,
+.alert-msg,
+.clear-msg,
+.invisible {
   display: none;
 }
 

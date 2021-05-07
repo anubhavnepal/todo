@@ -5,7 +5,6 @@ const plusBtn = document.getElementById("plusbtn");
 const addBtn = document.getElementById("addbtn");
 const clearBtn = document.getElementById("clrbtn");
 const inputVal = document.getElementById("inpval");
-const userName = document.getElementById("usr");
 const userTxt = document.querySelector(".user-name");
 const welcomeTxt = document.querySelector(".welcome");
 const ulEl = document.querySelector(".list");
@@ -15,7 +14,6 @@ plusBtn.addEventListener("click", unveil);
 addBtn.addEventListener("click", updateList);
 clearBtn.addEventListener("click", clearAll);
 inputVal.addEventListener("keyup", press);
-userName.addEventListener("keyup", greet);
 ulEl.addEventListener("click", unorderedLists);
 
 //Functions
@@ -63,7 +61,6 @@ function unveil() {
     inputVal.style.display = "inline";
     addBtn.style.display = "inline";
     plusBtn.style.display = "none";
-    userName.style.display = "none";
   }, 500);
 }
 function press(e) {
@@ -71,15 +68,7 @@ function press(e) {
     updateList();
   }
 }
-function greet(e) {
-  if (e.keyCode === 13) {
-    setTimeout(() => {
-      userTxt.innerHTML = `${userName.value}!`;
-      welcomeTxt.style.display = "inline";
-      userName.style.display = "none";
-    }, 170);
-  }
-}
+
 function unorderedLists(e) {
   e.target.closest("li").classList.toggle("completed");
 }
